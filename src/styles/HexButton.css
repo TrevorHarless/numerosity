@@ -1,9 +1,8 @@
-/* HexButton.css */
 .hex-button {
   width: 60px;
   height: 60px;
   background-color: #3498db;
-  border: 2px solid transparent; /* Transparent border by default */
+  border: 2px solid transparent;
   border-radius: 10%;
   font-size: 1.2rem;
   font-weight: bold;
@@ -13,10 +12,9 @@
   transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
-/* Highlight selected button */
 .hex-button.selected {
-  border-color: #e74c3c; /* Highlight border color */
-  background-color: #e67e22; /* Optional: Change background color */
+  border-color: #e74c3c;
+  background-color: #e67e22;
 }
 
 .hex-button:hover {

@@ -9,9 +9,9 @@ const NumberGrid = ({ numbers, onSelect, selectedIndices }) => (
         <HexButton
           key={index}
           value={num}
-          index={index} // Pass index
-          onSelect={onSelect} // Pass both num and index to onSelect
-          isSelected={selectedIndices.includes(index)} // Check if index is in selectedIndices
+          index={index} 
+          onSelect={onSelect} 
+          isSelected={selectedIndices.includes(index)}
         />
       ))}
     </div>

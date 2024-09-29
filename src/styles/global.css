@@ -1,80 +1,68 @@
-/* Global styles */
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Container for game */
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.header div {
+  flex: 1;
+  text-align: center;
+}
+
+.feedback {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
   .game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    max-width: 600px; /* Limit maximum width on larger screens */
-    margin: 0 auto;
-  }
-  
-  /* Header styles */
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     padding: 10px;
-    background-color: #2c3e50;
-    color: #fff;
-    border-radius: 5px;
-    margin-bottom: 20px;
   }
-  
-  .header div {
-    flex: 1;
-    text-align: center;
+
+  .header {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Feedback message */
+
   .feedback {
-    margin: 10px 0;
-    font-size: 1.2rem;
-    color: #e74c3c;
-    text-align: center;
+    font-size: 1rem;
   }
-  
-  /* Responsive styles for mobile devices */
-  @media (max-width: 768px) {
-    /* Make sure the game container is full-width */
-    .game-container {
-      width: 100%;
-      padding: 10px;
-    }
-  
-    /* Stack header elements vertically */
-    .header {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    /* Adjust font size */
-    .feedback {
-      font-size: 1rem;
-    }
+}
+
+@media (max-width: 480px) {
+  .game-container {
+    padding: 5px;
   }
-  
-  /* Smaller screen adjustments */
-  @media (max-width: 480px) {
-    /* Adjust padding for smaller screens */
-    .game-container {
-      padding: 5px;
-    }
-  
-    .feedback {
-      font-size: 0.9rem;
-    }
-  
-    /* Adjust header text sizes */
-    .header div {
-      font-size: 0.8rem;
-    }
+
+  .feedback {
+    font-size: 0.9rem;
   }
-  
+
+  .header div {
+    font-size: 0.8rem;
+  }
+}
