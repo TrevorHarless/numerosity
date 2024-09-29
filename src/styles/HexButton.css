@@ -1,0 +1,47 @@
+/* HexButton.css */
+.hex-button {
+  width: 60px;
+  height: 60px;
+  background-color: #3498db;
+  border: 2px solid transparent; /* Transparent border by default */
+  border-radius: 10%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+/* Highlight selected button */
+.hex-button.selected {
+  border-color: #e74c3c; /* Highlight border color */
+  background-color: #e67e22; /* Optional: Change background color */
+}
+
+.hex-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hex-button:active {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hex-button.correct {
+  background-color: #2ecc71;
+  animation: correctBounce 0.5s ease-in-out;
+}
+
+@keyframes correctBounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

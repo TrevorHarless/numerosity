@@ -1,0 +1,23 @@
+.result-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .result-display {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .result-display {
+      font-size: 1.1rem;
+    }
+  }
+  

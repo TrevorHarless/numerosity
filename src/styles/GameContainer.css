@@ -1,0 +1,59 @@
+/* Center the game in the viewport */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px; /* Constrain max width for better responsiveness */
+  width: 90vw; /* Use a percentage to adapt to smaller screens */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Space around the container */
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+}
+
+/* Make sure all inner components have some spacing */
+.header,
+.result-display,
+.number-grid {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .game-container {
+    max-width: 100%;
+    width: 100vw; /* Full width on mobile */
+    height: 100vh; /* Full height on mobile */
+    border-radius: 0; /* Remove rounded corners */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .header,
+  .result-display {
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .number-grid {
+    margin-bottom: 10px; /* Adjust spacing */
+  }
+}
+/* Feedback styles */
+.feedback {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Correct answer feedback */
+.feedback.correct {
+  color: green;
+}
+
+/* Incorrect answer feedback */
+.feedback.incorrect {
+  color: red;
+}
