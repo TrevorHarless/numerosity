@@ -24,18 +24,33 @@
   .game-container {
     max-width: 100%;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     border-radius: 0;
+    padding: 15px;
+  }
+
+  .header,
+  .result-display {
+    font-size: 0.9rem;
+  }
+
+  .number-grid {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-container {
     padding: 10px;
   }
 
   .header,
   .result-display {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
-  .number-grid {
-    margin-bottom: 10px;
+  .feedback {
+    font-size: 1rem;
   }
 }
 

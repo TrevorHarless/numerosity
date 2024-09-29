@@ -12,11 +12,15 @@
 @media (max-width: 768px) {
   .result-display {
     font-size: 1.3rem;
+    padding: 12px;
+    margin-bottom: 12px;
   }
 }
 
 @media (max-width: 480px) {
   .result-display {
     font-size: 1.1rem;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 }

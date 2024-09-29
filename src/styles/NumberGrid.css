@@ -29,6 +29,10 @@
     height: 60px;
     font-size: 1.2rem;
   }
+
+  .number-grid {
+    gap: 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -36,5 +40,9 @@
     width: 50px;
     height: 50px;
     font-size: 1rem;
+  }
+
+  .number-grid {
+    gap: 6px;
   }
 }

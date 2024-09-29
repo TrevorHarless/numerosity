@@ -57,3 +57,39 @@
 .operation-division {
   background-color: #8e44ad;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 8px 15px;
+  }
+
+  .operation-display {
+    padding: 8px;
+  }
+
+  .operation-label {
+    font-size: 0.7rem;
+  }
+
+  .operation-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 6px 10px;
+  }
+
+  .operation-label {
+    font-size: 0.65rem;
+  }
+
+  .operation-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1.8rem;
+  }
+}
